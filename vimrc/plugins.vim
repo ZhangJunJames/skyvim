@@ -24,7 +24,7 @@ Plug 'morhetz/gruvbox'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
 Plug 'mcchrish/nnn.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 call plug#end()
 
 " vim-airline
@@ -148,3 +148,6 @@ let g:nnn#layout = 'new' " or vnew, tabnew etc.
 let g:nnn#layout = { 'left': '~20%' } " or right, up, down
 " Floating window (neovim latest and vim with patch 8.2.191)
 let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
+
+
+ let g:mkdp_open_to_the_world = 1
