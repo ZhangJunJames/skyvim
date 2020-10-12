@@ -88,13 +88,13 @@ nnoremap <Leader>o :.Gbrowse<CR>
 
 noremap <Leader>gr :Gremove<CR>
 
-noremap <Leader>vb :e ~/.skyvim/basic.vim<CR>
-noremap <Leader>vf :e ~/.skyvim/filetypes.vim<CR>
-noremap <Leader>vp :e ~/.skyvim/plugins.vim<CR>
-noremap <Leader>vm :e ~/.skyvim/mapping.vim<CR>
-noremap <Leader>ve :e ~/.skyvim/extension.vim<CR>
-noremap <Leader>vl :e ~/.skyvim/local.vim<CR>
-noremap <Leader>vt :e ~/.skyvim/test.vim<CR>
+noremap <Leader>vb :e ~/.skyvim/vimrc/basic.vim<CR>
+noremap <Leader>vf :e ~/.skyvim/vimrc/filetypes.vim<CR>
+noremap <Leader>vp :e ~/.skyvim/vimrc/plugins.vim<CR>
+noremap <Leader>vm :e ~/.skyvim/vimrc/mapping.vim<CR>
+noremap <Leader>ve :e ~/.skyvim/vimrc/extension.vim<CR>
+noremap <Leader>vl :e ~/.skyvim/vimrc/local.vim<CR>
+noremap <Leader>vt :e ~/.skyvim/vimrc/test.vim<CR>
 noremap <Leader>vv :e ~/.vimrc<CR>
 noremap <Leader>vs :source ~/.vimrc<CR>
 
