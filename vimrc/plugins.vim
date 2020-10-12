@@ -7,7 +7,7 @@ call plug#begin(expand('~/.vim/plugged'))
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
-"Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Plug 'airblade/vim-gitgutter'
@@ -16,12 +16,14 @@ Plug 'vim-airline/vim-airline-themes'
 "Plug 'Raimondi/delimitMate'
 "Plug 'majutsushi/tagbar'
 "Plug 'dense-analysis/ale'
-"Plug 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 "Plug 'editor-bootstrap/vim-bootstrap-updater'
 "Plug 'sheerun/vim-polyglot'
 "Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'morhetz/gruvbox'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh'}
+Plug 'mcchrish/nnn.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -136,3 +138,14 @@ noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand
 noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
 noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
 noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+
+"" Disable default mappings
+"let g:nnn#set_default_mappings = 0
+"" Then set your own
+"nnoremap <silent> <leader>nn :NnnPicker<CR>
+"" Opens the nnn window in a split
+"let g:nnn#layout = 'new' " or vnew, tabnew etc.
+"" Or pass a dictionary with window size
+"let g:nnn#layout = { 'left': '~20%' } " or right, up, down
+"" Floating window (neovim latest and vim with patch 8.2.191)
+"et g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }kkk

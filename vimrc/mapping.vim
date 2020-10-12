@@ -2,8 +2,9 @@
 "" Mappings
 "*****************************************************************************
 " NerdTree
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
+"nnoremap <silent> <F2> :NERDTreeFind<CR>
+"nnoremap <silent> <F3> :NERDTreeToggle<CR>
+nnoremap <silent> <F2> :CocCommand explorer<CR>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
@@ -41,7 +42,6 @@ noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>e :FZF -m<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 
