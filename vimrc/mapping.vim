@@ -1,6 +1,9 @@
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
+" NerdTree
+nnoremap <silent> <F2> :NERDTreeFind<CR>
+nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 "" Split
 noremap <Leader>h :<C-u>split<CR>
@@ -83,11 +86,8 @@ vnoremap K :m '<-2<CR>gv=gv
 
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
-
-
-
 noremap <Leader>gr :Gremove<CR>
-
+" configs
 noremap <Leader>vb :e ~/.skyvim/vimrc/basic.vim<CR>
 noremap <Leader>vf :e ~/.skyvim/vimrc/filetypes.vim<CR>
 noremap <Leader>vp :e ~/.skyvim/vimrc/plugins.vim<CR>

@@ -146,7 +146,12 @@ if has('unnamedplus')
 endif
 
 
+"zsh tab
+set wildmenu
+set wildmode=full
 
+"vertical split help doc
+autocmd FileType help wincmd L
 
 
 "dont know 
